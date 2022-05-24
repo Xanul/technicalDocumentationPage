@@ -2,7 +2,49 @@
     font-family: 'Roboto Flex', sans-serif;
 }
 
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: fixed;
+    min-width: 290px;
+    width: 300px;
+    height: auto;
+
+}
+
 header {
     font-weight: 500;
     font-size: 2rem;
+}
+
+main {
+    position: absolute;
+    margin-left: 320px;
+}
+
+section {
+    width: 80%;
+    margin: 0 auto;
+}
+
+code {
+    background-color: #eee;
+    border-radius: 3px;
+    font-family: courier, monospace;
+    padding: 0 3px;
+    display: block;
+    width: 80%;
+}
+
+.code2 {
+    color: green;
+}
+
+.note {
+    background-color: lightgoldenrodyellow;
+    width: 80%;
 }

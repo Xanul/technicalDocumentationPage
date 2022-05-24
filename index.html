@@ -1,105 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.png" />
     <title>Git and GitHub Documentation Page</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,400;8..144,500;8..144,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles.css">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,400;8..144,500;8..144,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
     <nav id="navbar">
-        <header>Git and GitHub Basic Guide</header>
-        <ul>
-            <li>
-                <a href="#introduction" class="nav-link">Introduction</a>
-            </li>
-            <li>
-                <a href="#section2" class="nav-link">Section 2</a>
-            </li>
-            <li>
-                <a href="#section3" class="nav-link">Section 3</a>
-            </li>
-            <li>
-                <a href="#section4" class="nav-link">Section 4</a>
-            </li>
-            <li>
-                <a href="#section5" class="nav-link">Section 5</a>
-            </li>
-        </ul>
+      <header>Git and GitHub Basic Guide</header>
+      <ul>
+        <li>
+          <a href="#introduction" class="nav-link">Introduction</a>
+        </li>
+        <li>
+          <a href="#getting_started" class="nav-link">Getting Started</a>
+        </li>
+        <li>
+          <a href="#adding_files" class="nav-link">Adding Files</a>
+        </li>
+        <li>
+          <a href="#staging" class="nav-link">Staging</a>
+        </li>
+        <li>
+          <a href="#section5" class="nav-link">Section 5</a>
+        </li>
+      </ul>
     </nav>
     <main id="main-doc">
-        <section class="main-section" id="introduction">
-            <header>Introduction</header>
-            <article>
-                <h3>What is Git?</h3>
-                <p>Git is a popular version control system. It was created by Linus Torvalds in 2005, and has been maintained by Junio Hamano since then.</p>
-                <p>It is used for:</p>
-                <ul>
-                    <li>Tracking code changes</li>
-                    <li>Tracking who made changes</li>
-                    <li>Coding colaboration</li>
-                </ul>
-                <h3>What does Git do?</h3>
-                <ul>
-                    <li>Manage projects with <b>Repositories</b></li>
-                    <li><b>Clone</b> a project to work on a local copy</li>
-                    <li>Control and track changes with <b>Staging</b> and <b>Commiting</b></li>
-                    <li><b>Pull</b> the latest version of the project to a local copy</li>
-                    <li><b>Push</b> local updates to the main project</li>
-                </ul>
-                <h3>Why Git?</h3>
-                <ul>
-                    <li>Over 70% of developers use Git!</li>
-                    <li>Developers can work together from anyther in the world</li>
-                    <li>Developers can see the full history of the project</li>
-                    <li>Developers can revert to earlier versions od a project</li>
-                </ul>
-                <h3>What is GitHub?</h3>
-                <ul>
-                    <li>Git is nor the same ad GitHub</li>
-                    <li>GitHub makes tools that use Git</li>
-                    <li>GitHub is the largest host of source code in the world, and has been owned by Microsoft since 2018</li>
-                    <li>In this guide we will focus on using Git with GitHub</li>
-                </ul>
-            </article>
-        </section>
-        <section class="main-section" id="section2">
-            <header>Topic Title</header>
-            <article>
-                <p>Paragraph 4</p>
-                <p>Paragraph 5</p>
-                <p>Paragraph 6</p>
-            </article>
-        </section>
-        <section class="main-section" id="section3">
-            <header>Topic Title</header>
-            <article>
-                <p>Paragraph 7</p>
-                <p>Paragraph 8</p>
-                <p>Paragraph 9</p>
-            </article>
-        </section>
-        <section class="main-section" id="section4">
-            <header>Topic Title</header>
-            <article>
-                <p>Paragraph 10</p>
-                <p>Paragraph 11</p>
-                <p>Paragraph 12</p>
-            </article>
-        </section>
-        <section class="main-section" id="section5">
-            <header>Topic Title</header>
-            <article>
-                <p>Paragraph 13</p>
-                <p>Paragraph 14</p>
-                <p>Paragraph 15</p>
-            </article>
-        </section>
+      <section class="main-section" id="introduction">
+        <header>Introduction</header>
+        <article>
+          <h3>What is Git?</h3>
+          <p>
+            Git is a popular version control system. It was created by Linus
+            Torvalds in 2005, and has been maintained by Junio Hamano since
+            then.
+          </p>
+          <p>Some of the main uses of Git are:</p>
+          <ul>
+            <li>Tracking code changes</li>
+            <li>Tracking who made changes</li>
+            <li>Coding colaboration</li>
+            <li>Backup system</li>
+          </ul>
+          <h3>What does Git do?</h3>
+          <ul>
+            <li>Manage projects with <b>Repositories</b></li>
+            <li><b>Clone</b> a project to work on a local copy</li>
+            <li>
+              Control and track changes with <b>Staging</b> and <b>Commiting</b>
+            </li>
+            <li>
+              <b>Pull</b> the latest version of the project to a local copy
+            </li>
+            <li><b>Push</b> local updates to the main project</li>
+          </ul>
+          <h3>Why Git?</h3>
+          <ul>
+            <li>Over 70% of developers use Git!</li>
+            <li>Developers can work together from anyther in the world</li>
+            <li>Developers can see the full history of the project</li>
+            <li>Developers can revert to earlier versions od a project</li>
+          </ul>
+          <h3>What is GitHub?</h3>
+          <ul>
+            <li>Git is nor the same ad GitHub</li>
+            <li>GitHub makes tools that use Git</li>
+            <li>
+              GitHub is the largest host of source code in the world, and has
+              been owned by Microsoft since 2018
+            </li>
+            <li>In this guide we will focus on using Git with GitHub</li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="getting_started">
+        <header>Getting Started</header>
+        <article>
+          <h3>Install</h3>
+          <p>
+            You can download Git for free from the following website:
+            https://www.git-scm.com/
+          </p>
+          <h3>Using Git with Command Line</h3>
+          <p>
+            o start using Git, we are first going to open up our Command shell.
+            For Windows, you can use Git bash, which comes included in Git for
+            Windows. For Mac and Linux you can use the built-in terminal. The
+            first thing we need to do, is to check if Git is properly installed:
+          </p>
+          <code> git --version</code>
+          <code class="code2">git version 2.30.2.windows.1</code>
+          <p>
+            If Git is installed, it should show something like git version x.x.x
+          </p>
+          <h3>Initial configuration</h3>
+          <p>
+            Now let Git know who you are. This is important for version control
+            systems, as each Git commit uses this information:
+          </p>
+          <code>git config --global user.name "YOUR USERNAME"</code>
+          <code>git config --global user.email "YOUR EMAIL"</code>
+          <p class="note">
+            Note: Use global to set the username and e-mail for every repository
+            on your computer. If you want to set the username/e-mail for just
+            the current repo, you can remove global
+          </p>
+          <h3>Creating Git Folder</h3>
+          <p>Now, let's create a new folder for our project:</p>
+          <code>mkdir myProject</code>
+          <code>cd myProject</code>
+          <p class="note">
+            mkdir makes a new directory. <br />
+            cd changes the current working directory.
+          </p>
+          <h3>Initialize Git</h3>
+          <p>
+            Once you have navigated to the correct folder, you can initialize
+            Git on that folder:
+          </p>
+          <code>git init</code>
+          <code class="code2"
+            >Initialized empty Git repository in
+            /Users/user/myproject/.git/</code
+          >
+          <p>You just created your first Git Repository!</p>
+          <p class="note">
+            Note: Git now knows that it should watch the folder you initiated it
+            on. Git creates a hidden folder to keep track of changes.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="adding_files">
+        <header>Adding Files</header>
+        <article>
+          <h3>Adding New Files</h3>
+          <p>
+            You just created your first local Git repo. But it is empty. So
+            let's add some files, or create a new file using your favourite text
+            editor. Then save or move it to the folder you just created.
+          </p>
+          <p>
+            Once in the folder, you can use the following command to verify the
+            status of the repository:
+          </p>
+          <code>git status</code>
+          <code class="code2">
+            <br />
+            On branch master No commits yet <br />
+            Untracked files: (use "git add ..." to include in what will be
+            committed) <br />
+            index.html (example file) <br />
+            nothing added to commit but untracked files present (use "git add"
+            to track)
+          </code>
+          <p>
+            Now Git is aware of the file, but has not added it to our
+            repository!
+          </p>
+          <p>Files in your Git repository folder can be in one of 2 states:</p>
+          <ul>
+            <li>
+              Tracked - files that Git knows about and are added to the
+              repository
+            </li>
+            <li>
+              Untracked - files that are in your working directory, but not
+              added to the repository
+            </li>
+          </ul>
+          <p>
+            When you first add files to an empty repository, they are all
+            untracked. To get Git to track them, you need to stage them, or add
+            them to the staging environment. 
+            <br> We will cover the staging
+            environment in the next chapter.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="staging">
+        <header>Staging</header>
+        <article>
+          <p>Paragraph 10</p>
+          <p>Paragraph 11</p>
+          <p>Paragraph 12</p>
+        </article>
+      </section>
+      <section class="main-section" id="section5">
+        <header>Topic Title</header>
+        <article>
+          <p>Paragraph 13</p>
+          <p>Paragraph 14</p>
+          <p>Paragraph 15</p>
+        </article>
+      </section>
     </main>
-</body>
+  </body>
 </html>
