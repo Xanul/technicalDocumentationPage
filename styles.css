@@ -8,12 +8,68 @@ html {
     padding: 0;
 }
 
-nav {
-    position: fixed;
-    min-width: 290px;
-    width: 300px;
-    height: auto;
+body {
+    margin: 0;
+    padding: 0;
+}
 
+.contentContainer {
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    
+}
+
+nav {
+    /* position: fixed; */
+    /* min-width: 290px; */
+    /* width: 300px;
+    height: auto; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    
+}
+
+#navbar ul {
+    padding: 0;
+    height: 88%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#navbar li{
+    list-style: none;
+    border-top: 1px solid black;
+    position: relative;
+    width: 100%;
+}
+
+#navbar li:hover {
+    background-color: rgb(232,77,49);
+}
+
+#navbar a:hover {
+    color: #fff;
+}
+
+#navbar a {
+    display: block;
+    padding: 10px 30px;
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(232,77,49);
+}
+
+#gitLogo {
+    width: 50%;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 header {
@@ -22,13 +78,17 @@ header {
 }
 
 main {
-    position: absolute;
-    margin-left: 320px;
+    /* position: absolute;
+    margin-left: 320px; */
+    background-color: rgba(232,77,49,0.8);
 }
 
 section {
     width: 80%;
-    margin: 0 auto;
+    margin: 50px auto;
+    background-color: rgba(255,255,255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
 }
 
 code {
@@ -38,13 +98,90 @@ code {
     padding: 0 3px;
     display: block;
     width: 80%;
+    padding: 10px;
+    margin-left: 10px;
 }
 
 .code2 {
     color: green;
+    overflow:hidden;
 }
 
 .note {
     background-color: lightgoldenrodyellow;
     width: 80%;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+
+
+@media (max-width:870px){
+
+    main {
+        /* background-color: red; */
+    }
+
+    .contentContainer {
+        display: inline;
+    }
+
+    nav {
+        position: relative;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-height: 300px;
+        display: inline;   
+        
+        /* background-color: antiquewhite;    */
+    }
+
+    #navbar ul {
+        margin: 0 auto;
+        width: 70%;
+        height: auto;
+          
+    }
+
+    main {
+        padding-top: 1px;
+        /* margin-top: 288px; */
+        border-top: 3px solid black;
+    }
+
+    .logoContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #gitLogo {
+        width: 55px;
+        margin-right: 10px;
+    }
+
+    .logoContainer header {
+        font-size: 1.5rem;
+    }
+
+    section {
+        width: 85%;
+        margin: 10 auto;
+    }
+
+    code {
+        width: 80%;
+    }
+
+    #lastSection {
+        /* border-bottom: 1px solid black;
+        margin-bottom: 5px; */
+    }
+
+    #introduction {
+        /* margin-top: 350px; */
+    }
+
 }
